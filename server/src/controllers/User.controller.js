@@ -6,3 +6,8 @@ import { User } from "../models/User.model.js";
 
 
 
+const Signup = asyncHandler(async(req,res)=>{
+    const {email,otp} = req.body;
+   
+
+})

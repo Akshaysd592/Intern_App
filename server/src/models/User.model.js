@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 
 const UserSchema = new mongoose.Schema({
+   email:{
+      type:String,
+      required:true,
+   },
    name:{
         type:String,
         required:true,
@@ -27,6 +31,10 @@ const UserSchema = new mongoose.Schema({
     pastExperience:{
        type: mongoose.Schema.Types.ObjectId,
        ref:"PastExperience"
+    },
+    coin:{
+      type:Number,
+
     }
 
     
